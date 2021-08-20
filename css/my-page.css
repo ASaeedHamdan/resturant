@@ -1,0 +1,428 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+a{
+    color:unset;
+    text-decoration: none;
+}
+body,html{
+    background-color:#ffffff;
+    scroll-behavior:smooth;
+    position:relative;
+    overflow-x:hidden;
+}
+.bg-img{
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* start nav and slider */
+.nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99;
+    background-color:#f0f3f7;
+    box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.menu-wrap{
+    max-width:1240px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+}
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#f80;
+}
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.menu-item{
+    margin-left:1rem;
+    padding:0rem 1.5rem;
+    font-weight:600;
+    font-size:15px;
+    transition:.5s ease-in-out;
+    cursor: pointer;
+    color:#7a7a7b;
+}
+.menu-item:hover,
+.menu-item.active{
+    color:#fff;
+    background-color:#f80;
+    border-radius:1rem;
+}
+.cart-btn{
+    width:3rem;
+    height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    cursor: pointer;
+    transition:.5s ease-in-out;
+    color:#f80;
+}
+.cart-btn:hover{
+    color:#fff;
+    background-color:#f80;
+    border-radius:1rem;
+}
+section{
+    display:flex;
+    flex-direction:row;
+}
+section .text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:10%;
+    margin-left:30px;
+}
+section .text h2{
+    color:#f80;
+    font-weight:bold;
+    font-size:90px;
+}
+section .text p{
+    color:rgb(0, 0, 0);
+}
+section .text button{ 
+    width:234px;
+    padding:1rem 5rem;
+    outline:none;
+    border:none;
+    background-color:#fff;
+    border:.125rem solid #f80;
+    border-radius:2rem;
+    color:#f80;
+    margin:3rem 0;
+    cursor: pointer;
+    font-weight:600;
+    transition:.5s ease-in-out;
+}
+section .text button:hover{
+    background-color:#f80;
+    color:#fff;
+}
+section img{
+    height:80vh;
+    width:50%;
+    margin-top:80px;
+}
+/* end nav and slider */
+
+/* start about */
+.about{
+    display:flex;
+    flex-direction:row;
+    position: relative;
+}
+.about img{
+    height:70vh;
+    width:50%;
+}
+.about .text{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    text-align:left;
+    position:absolute;
+    top:120px;
+    left:650px;
+    width:30%;
+}
+.about .text span{
+    color:#f80;
+    font-weight:bold;
+    position: relative;
+}
+.about .text span::after{
+    content:"";
+    width:20px;
+    height:2px;
+    background-color:#f80;
+    z-index:1;
+    position:absolute;
+    top:-5px;
+    left:0;
+}
+.about .text h2{
+    margin:8px 0;
+    font-size:30px;
+}
+.about .text p{
+    color:rgb(87, 87, 87);
+}
+.about .text button{ 
+    width:200px;
+    padding:1rem 1rem;
+    outline:none;
+    border:none;
+    background-color:#fff;
+    border:.125rem solid #f80;
+    border-radius:2rem;
+    color:#f80;
+    margin:2rem 0;
+    cursor: pointer;
+    font-weight:600;
+    transition:.5s ease-in-out;
+}
+.about .text button:hover{
+    background-color:#f80;
+    color:#fff;
+}
+/* end about */
+
+/* start our-services */
+.our-services{
+    display:flex;
+    margin-top:90px;
+    margin-bottom:150px;
+}
+.our-services span,
+.our-services h1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.our-services span{
+    color:#f80;
+    margin-bottom:20px;
+}
+.our-services h1{
+    font-weight:bold;
+    margin-bottom:40px;
+}
+.our-services .service{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 100px;
+}
+.our-services .serv{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.our-services .serv i{
+    color:#f80;
+    font-size:50px;
+}
+.our-services .serv h3{
+    margin:15px 0;
+}
+.our-services .serv p{
+    color:rgb(85, 85, 85);
+}
+/* end our-services */
+
+/* start menu */
+.the-menu{
+    background-image:url(../images/122031659-greek-food-background-traditional-different-greek-dishes-top-view-.jpg);
+    background-size:cover;
+    height:166vh;
+    text-align:center;
+    margin-top:100px;
+    position: relative;
+}
+.food-menu{
+    padding:2rem;
+    margin:5rem;
+    position:absolute;
+    top:-50px;
+    background-color:#fff;
+    border-radius:2rem;
+    box-shadow:rgba(100, 100, 100, 0.2) 0px 7px 29px 0px;
+ }
+.food-menu h1 span{
+    color:#f80;
+}
+.food-menu p{
+    margin:2rem 0;
+}
+.food-category{
+    display:flex;
+}
+.food-category button{
+    padding:.5rem 2.5rem;
+    margin:0 1rem;
+    outline:none;
+    border:1px solid #f80;
+    background-color:transparent;
+    color:#f80;
+    font-weight:600;
+    border-radius:1rem;
+    cursor: pointer;
+    transition:.5s ease-in-out;
+}
+.food-category button.active,
+.food-category button:hover{
+    background-color:#f80;
+    color:#fff;
+}
+.food-item-wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    margin-top:3rem;
+}
+.food-item{
+    width:25%;
+    height:20rem;
+    padding:1rem;
+}
+.item-wrap{
+    height:100%;
+    transition:.4s ease-in-out;
+    cursor: pointer;
+    border-radius:2rem;
+}
+.item-wrap:hover{
+
+    box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.item-img{
+    height:60%;
+    position: relative;
+    overflow: hidden;
+    border-radius:2rem;
+}
+.img-holder{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:.5s ease-in-out;
+    border-radius:2rem;
+}
+.img-holder:hover{
+    transform:scale(1.6) rotate(45deg);
+}
+.item-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:3rem;
+    padding:0 1rem;
+}
+.item-info h3{
+    color:#7a7a7b;
+}
+.item-info>div:first-child{
+    text-align:left;
+}
+
+.food-item-wrap>div{
+    display:none;
+}
+.food-item-wrap.all>div{
+    display:block;
+}
+.food-item-wrap.salad>.salad-type{
+    display:block;
+}
+.food-item-wrap.lorem>.lorem-type{
+    display:block;
+}
+.food-item-wrap.ipsum>.ipsum-type{
+    display:block;
+}
+.food-item-wrap.dolor>.dolor-type{
+    display:block;
+}
+/*end menu */
+/* start contact us */
+.contact-us{
+    margin:90px;
+}
+.contact{
+    display:flex;
+    flex-direction:row;
+}
+.contact-us .contact span{
+    color:#f80;
+}
+.contact-us .contact h1{
+    font-weight:bold;
+    margin:10px 0 20px 0;
+}
+.contact-us .contact button{
+    width:170px;
+    height:100%;
+    background-color:#f80;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    padding:10px 20px;
+    outline:none;
+    transition:.2s ease-in-out;
+    margin:80px 0 0 100px;
+}
+.contact-us .contact button:hover{
+    background-color:rgb(255, 154, 38);
+}
+/* end contact us */
+.footer{
+    margin:80px;
+}
+.footer .row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.footer .information{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.footer .information .font{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    cursor: pointer;
+}
+.footer .information h2{
+    margin-bottom:10px;
+    color:#f80;
+}
+.footer .information span:hover{
+    color:#f80;
+    cursor: pointer;
+}
+.footer .information .up{
+    margin-top:-50px;
+    margin-bottom: -21px;
+}
+.footer .information .down{
+    margin-top:-23px;
+}
+.copyright p{
+    text-align:center;
+    margin-bottom:20px;
+}
